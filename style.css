@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.red{
+    border: 2px solid red;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.land{
+    display: flex;
+}
+nav{
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right:2px solid black ;
+    transition: all 0.3s ease-in-out;
+}
+nav:hover{
+    width: 13vw;
+}
+nav:hover .nav-items ul li a{
+    display: inline-block;
+}
+.logo img{
+    width: 5vw;
+    border-radius: 50%;
+    margin: 3px;
+}
+.nav-items{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 500;
+}
+.nav-items ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.nav-items ul li span{
+    margin: 5px;
+    font-size: 30px;
+}
+.nav-items ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+.hero{
+    width: 75vw;
+    height: auto;
+    background-image: url('herobg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.hero p{
+    color: whitesmoke;
+    font-size: 60px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: 600;
+}
+.hero span{
+    color: whitesmoke;
+    font-size: 15px;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    /* font-weight: 600; */
+    margin: 5px;
+}
+.hero a{
+    position: absolute;
+    top: 74%;
+    left: 2%;
+    text-decoration: none;
+    color: rgba(0, 255, 255, 0.491);
+    margin: 5px;
+
+}
+.hero button{
+    position: absolute;
+    top: 83%;
+    left: 2%;
+    background-color:  rgb(183, 182, 182);
+    border: none;
+    border-radius: 25px;
+    width: 10vw;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+}
+.hero button:hover{
+    background-color: #fff;
+}
+.disc img{
+    border-radius:50%;
+    width: 30vw;
+}
+.disc{
+    position: absolute;
+    top: 27%;
+    right: -10%;
+    animation: rotate infinite 10s linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+
+.container {
+    height: 80vh;
+    width: auto;
+    border: 0px solid;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.container .card_container {
+    margin: 20px;
+    /* border: 1px solid rgb(155, 108, 108); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    height: 75vh;
+}
+
+.more button {
+    display: inline-block;
+    /* border: 1px solid rgb(182, 182, 241); */
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(173, 173, 235);
+    color: rgb(47, 47, 55);
+    margin-top: 10px;
+}
+
+.poetry_container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 70vh;
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(231, 222, 222);
+}
+
+/* audio::-webkit-media-controls-current-time-display {
+    display: none;
+} */
+
+/* audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+} */
+
+audio::-webkit-media-controls-play-button {
+    background-color: rgb(231, 222, 222);
+    ;
+}
+
+h2 {
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.podcast_container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 70vh;
+}
+
+.box {
+    margin: auto;
+    height: 55vh;
+    padding: 2px;
+    width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box audio {
+    border-radius: 50px;
+    margin: auto;
+    padding: 10px;
+    height: 40px;
+    width: 270px;
+}
