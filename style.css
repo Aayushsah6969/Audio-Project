@@ -1,59 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.red{
+
+.red {
     border: 2px solid red;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.land{
+
+.land {
     display: flex;
+    overflow: hidden; /* Prevent horizontal scroll */
 }
-nav{
+
+nav.navbar {
+    /* position: fixed; Make the navbar sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0;
     width: 5vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-right:2px solid black ;
+    border-right: 2px solid black;
     transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it's above other content */
 }
-nav:hover{
+
+nav.navbar:hover {
     width: 13vw;
 }
-nav:hover .nav-items ul li a{
+
+nav.navbar:hover .nav-items ul li a {
     display: inline-block;
 }
-.logo img{
+
+.logo img {
     width: 5vw;
     border-radius: 50%;
     margin: 3px;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     justify-content: end;
     align-items: center;
     font-weight: 500;
 }
+
 .nav-items ul li {
     list-style-type: none;
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     padding: 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
-.nav-items ul li span{
+
+.nav-items ul li span {
     margin: 5px;
     font-size: 30px;
 }
-.nav-items ul li a{
+
+.nav-items ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +77,7 @@ nav:hover .nav-items ul li a{
     color: black;
     display: none;
 }
+
 .hero{
     width: 75vw;
     height: auto;
@@ -150,7 +167,7 @@ body {
 }
 
 .container {
-    height: 80vh;
+    /* height: 80vh; */
     width: auto;
     border: 0px solid;
     display: flex;
@@ -163,7 +180,7 @@ body {
     /* border: 1px solid rgb(155, 108, 108); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
-    height: 75vh;
+    /* height: 75vh; */
 }
 
 .more button {
@@ -172,9 +189,10 @@ body {
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
-    background-color: rgb(173, 173, 235);
+    background-color: rgb(244, 121, 131);
     color: rgb(47, 47, 55);
-    margin-top: 10px;
+    margin-top: 4px;
+    border: none;
 }
 
 .poetry_container {
@@ -183,7 +201,7 @@ body {
     flex-direction: column;
     padding: 10px;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
 
 }
 
@@ -191,14 +209,7 @@ audio::-webkit-media-controls-panel {
     background-color: rgb(231, 222, 222);
 }
 
-/* audio::-webkit-media-controls-current-time-display {
-    display: none;
-} */
-
-/* audio::-webkit-media-controls-time-remaining-display {
-    display: none;
-} */
-
+ 
 audio::-webkit-media-controls-play-button {
     background-color: rgb(231, 222, 222);
     ;
@@ -215,12 +226,12 @@ h2 {
     flex-direction: column;
     padding: 10px;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .box {
     margin: auto;
-    height: 55vh;
+    /* height: 55vh; */
     padding: 2px;
     width: 290px;
     overflow: hidden;
@@ -237,4 +248,10 @@ h2 {
     padding: 10px;
     height: 40px;
     width: 270px;
+}
+.box img{
+    width: 10vw;
+}
+.section-2{
+    margin-top: 20px;
 }
