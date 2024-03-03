@@ -166,7 +166,7 @@ body {
 
 }
 
-.container {
+.containerr {
     /* height: 80vh; */
     width: auto;
     border: 0px solid;
@@ -175,7 +175,7 @@ body {
 
 }
 
-.container .card_container {
+.containerr .card_container {
     margin: 20px;
     /* border: 1px solid rgb(155, 108, 108); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -258,4 +258,73 @@ h2 {
 .section-2 h1{
     text-align: center;
     font-size: 45px;
+}
+footer{
+    margin-top: 30px;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category h2{
+    text-decoration: none;
+}
+.category ul li a{
+    text-decoration: none;
+    color: black;
+}
+.category ul li{
+    list-style: none;
+    margin: 4px;
+    color: rgb(70, 70, 70);
+}
+.subscribe h2{
+text-decoration: none;
+}
+.subscribe input{
+   height: 30px;
+   outline: none;
+   border-radius:4px ;
+}
+.subscribe button{
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 155, 163);
+border: none;
+padding: 5px;
+border-radius:4px;
+}
+.subscribe.form{
+    padding: 4px;
+}
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(254, 240, 240);
+}
+.footer-2 .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-2 .final img{
+    width: 40px;
+    height: 40px;
+}
+.socials ul li{
+    list-style: none;
+}
+.socials ul li a{
+    padding: 4px;
+}
+.socials ul{
+display: flex;
 }
