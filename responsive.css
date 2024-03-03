@@ -2,11 +2,37 @@
     .containerr{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card_container{
+        width: 85vw;
+    }
+    .box{
+        width: 80vw;
+    }
+    .box ul li audio{
+        width: 78vw;
+    }
+    .navbar{
+        display: none;
     }
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:500px){
     .footer-1, .footer-2{
         display: flex;
         flex-direction: column;
     }
+    .card_container{
+        width: 95vw;
+    }
+    .box{
+        width: 90vw;
+    }
+    .box ul li audio{
+        width: 88vw;
+    }
+}
+@media only screen and (max-width:900px){
+    
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* overflow-x: hidden; */
 }
 
 .red {
@@ -16,7 +17,7 @@
 
 .land {
     display: flex;
-    overflow: hidden; /* Prevent horizontal scroll */
+    /* overflow: hidden; Prevent horizontal scroll */
 }
 
 nav.navbar {
@@ -31,10 +32,11 @@ nav.navbar {
     border-right: 2px solid black;
     transition: all 0.3s ease-in-out;
     z-index: 1000; /* Ensure it's above other content */
+    margin-right: 0px;
 }
 
 nav.navbar:hover {
-    width: 13vw;
+    width: 14vw;
 }
 
 nav.navbar:hover .nav-items ul li a {
@@ -65,7 +67,7 @@ nav.navbar:hover .nav-items ul li a {
 }
 
 .nav-items ul li span {
-    margin: 5px;
+    /* margin: 5px; */
     font-size: 30px;
 }
 
@@ -79,7 +81,7 @@ nav.navbar:hover .nav-items ul li a {
 }
 
 .hero{
-    width: 75vw;
+    width: 80vw;
     height: auto;
     background-image: url('herobg.webp');
     background-repeat: no-repeat;
@@ -155,14 +157,11 @@ nav.navbar:hover .nav-items ul li a {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
+ 
 
 body {
     background-color: whitesmoke;
-    padding: 20px;
+    /* padding: 20px; */
 
 }
 
@@ -181,6 +180,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
     /* height: 75vh; */
+    overflow: hidden;
 }
 
 .more button {
@@ -230,24 +230,24 @@ h2 {
 }
 
 .box {
-    margin: auto;
-    /* height: 55vh; */
+   
     padding: 2px;
-    width: 290px;
+ 
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .box audio {
-    border-radius: 50px;
+    border-radius: none;
     margin: auto;
     padding: 10px;
     height: 40px;
-   /*  width: 270px; */
+    
 }
 .box img{
     width: 10vw;
