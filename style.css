@@ -15,6 +15,11 @@
 .land {
     display: flex;   
 }
+nav{
+    position: fixed;
+    left: 0px;
+    background-color: #bdbdbd44;
+}
 nav.navbar {
     top: 0; 
     left: 0;
@@ -23,14 +28,15 @@ nav.navbar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-right: 2px solid black;
+    border-right: 2px solid rgba(40, 40, 40, 0.619);
     transition: all 0.3s ease-in-out;
     z-index: 1000; /* Ensure it's above other content */
     margin-right: 0px;
+    backdrop-filter: blur(10px);
 }
 
 nav.navbar:hover {
-    width: 11vw;
+    /* width: 11vw; */
 }
 
 nav.navbar:hover .nav-items ul li a {
@@ -76,16 +82,23 @@ nav.navbar:hover .nav-items ul li a {
 }
 
 .hero{
+    position: relative;
+    left: 5vw;
     width: 80vw;
-    height: auto;
+    height:100vh ;
     background-image: url('herobg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+nav.navbar:hover .hero{
+    /* position: relative; */
+    /* left: 11vw; */
 }
 .hero p{
     color: whitesmoke;
@@ -152,7 +165,12 @@ nav.navbar:hover .nav-items ul li a {
     }
 }
 
-
+#sidebar.expanded {
+    width: 11vw;
+}
+#content.expanded {
+    left: 11vw;
+}
  
 
 body {
@@ -254,76 +272,4 @@ h2 {
 .section-2 h1{
     text-align: center;
     font-size: 45px;
-}
-footer{
-    margin-top: 30px;
-}
-.footer-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-.category{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.category h2{
-    text-decoration: none;
-}
-.category ul li a{
-    text-decoration: none;
-    color: black;
-}
-.category ul li{
-    list-style: none;
-    margin: 4px;
-    color: rgb(70, 70, 70);
-}
-.subscribe h2{
-text-decoration: none;
-}
-.subscribe input{
-   height: 30px;
-   outline: none;
-   border-radius:4px ;
-}
-.subscribe button{
-    height: 30px;
-    cursor: pointer;
-    background-color: rgb(255, 155, 163);
-border: none;
-padding: 5px;
-border-radius:4px;
-}
-.subscribe.form{
-    padding: 4px;
-}
-.footer-2{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(254, 240, 240);
-}
-.footer-2 .final{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-2 .final img{
-    width: 40px;
-    height: 40px;
-}
-.socials ul li{
-    list-style: none;
-}
-.socials ul li a{
-    padding: 4px;
-}
-.socials ul{
-display: flex;
-}
-.final h2{
-    text-decoration: none;
 }
