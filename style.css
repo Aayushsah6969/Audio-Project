@@ -12,6 +12,51 @@
     justify-content: center;
     align-items: center;
 }
+.nav-flex{
+    display: none;
+}
+
+.nav-items-flex {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* White background with opacity */
+    z-index: 999; /* Make it appear above other elements */
+    transition: all 0.3s ease-in-out;
+/* padding: 30px; */
+}
+.nav-items-flex ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: st;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20vh;
+}  
+.nav-items-flex ul li {
+    margin: 5px;
+     list-style: none;
+     font-size: 20px;
+     flex: start;
+}
+.nav-items-flex ul li a{
+    color: black;
+    margin: 5px;
+    opacity: 1;
+    text-decoration:none ;
+}  
+.close-button {
+    position: absolute;
+    top: 60px;
+    right: 50%;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .land {
     display: flex;   
 }
@@ -35,9 +80,7 @@ nav.navbar {
     backdrop-filter: blur(10px);
 }
 
-nav.navbar:hover {
-    /* width: 11vw; */
-}
+ 
 
 nav.navbar:hover .nav-items ul li a {
     display: inline-block;
@@ -80,7 +123,9 @@ nav.navbar:hover .nav-items ul li a {
     color: black;
     display: none;
 }
-
+.logo-flex{
+    display: none;
+}
 .hero{
     position: relative;
     left: 5vw;
@@ -96,10 +141,7 @@ nav.navbar:hover .nav-items ul li a {
     transition: all 0.3s ease-in-out;
 
 }
-nav.navbar:hover .hero{
-    /* position: relative; */
-    /* left: 11vw; */
-}
+ 
 .hero p{
     color: whitesmoke;
     font-size: 60px;
@@ -174,13 +216,10 @@ nav.navbar:hover .hero{
  
 
 body {
-    background-color: whitesmoke;
-    /* padding: 20px; */
-
+    background-color: whitesmoke
 }
 
 .containerr {
-    /* height: 80vh; */
     width: auto;
     border: 0px solid;
     display: flex;

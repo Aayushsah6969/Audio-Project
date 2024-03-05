@@ -17,11 +17,42 @@
   <body>
      
       <nav class="navbar" id="sidebar" onmouseover="expandSidebar()" onmouseout="collapseSidebar()">
+        
         <div class="logo flex">
           <a href="#">
             <img src="logo.webp" alt="logo" />
           </a>
         </div>
+
+        <div class="nav-items-flex" id="navItemsFlex">
+          <button class="close-button" onclick="toggleNavItemsFlex()">✕</button>
+          <ul>
+            <li>
+              <span class="material-symbols-outlined">home</span>
+              <a href="index.html"> HOME </a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">podcasts</span>
+              <a href="podcast.html"> PODCASTS</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">library_music</span>
+              <a href="poetry.html"> POETRIES</a>
+            </li>
+            
+            <li>
+              <span class="material-symbols-outlined">event_note</span>
+              <a href="writing.html"> WRITINGS</a>
+            </li>
+            
+            <li>
+              <span class="material-symbols-outlined">contact_phone</span>
+              <a href="contact.html"> CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+
         <div class="nav-items">
           <ul>
             <li>
@@ -48,9 +79,25 @@
             </li>
           </ul>
         </div>
+        
       </nav>
 
       <div class="hero" id="content">
+
+        <div class="logo-flex">
+          <a href="#">
+            <img src="logo.webp" alt="logo" />
+          </a>
+        </div>
+
+        <div class="nav-flex" onclick="toggleNavItemsFlex()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+      
+
         <div class="front-text">
           <p>
             ULTIMATE <br />
@@ -64,7 +111,7 @@
             <br />
             distinctio exercitationem!
           </span>
-          <a href="#">CLICK HERE TO LEARN MORE</a>
+          <!-- <a href="#">CLICK HERE TO LEARN MORE</a> -->
           <button>Explore</button>
         </div>
         <div class="disc">
@@ -174,5 +221,6 @@
    
  
  <script src="sidebar.js"></script>
+ <script src="navToggle.js"></script>
   </body>
 </html>
