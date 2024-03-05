@@ -4,25 +4,19 @@
     font-family: sans-serif;
     /* overflow-x: hidden; */
 }
-
 .red {
     border: 2px solid red;
 }
-
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .land {
-    display: flex;
-    /* overflow: hidden; Prevent horizontal scroll */
+    display: flex;   
 }
-
 nav.navbar {
-    /* position: fixed; Make the navbar sticky */
-    top: 0; /* Stick it to the top of the viewport */
+    top: 0; 
     left: 0;
     width: 5vw;
     height: 100vh;
@@ -64,6 +58,7 @@ nav.navbar:hover .nav-items ul li a {
     padding: 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    margin-bottom: 7px;
 }
 
 .nav-items ul li span {
@@ -139,13 +134,14 @@ nav.navbar:hover .nav-items ul li a {
 }
 .disc img{
     border-radius:50%;
-    width: 30vw;
+    width: 28vw;
 }
 .disc{
     position: absolute;
     top: 27%;
     right: -10%;
     animation: rotate infinite 10s linear;
+    overflow: hidden;
 }
 @keyframes rotate{
     0%{
