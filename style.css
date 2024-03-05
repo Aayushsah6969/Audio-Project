@@ -36,7 +36,7 @@ nav.navbar {
 }
 
 nav.navbar:hover {
-    width: 14vw;
+    width: 11vw;
 }
 
 nav.navbar:hover .nav-items ul li a {
