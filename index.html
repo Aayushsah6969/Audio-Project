@@ -53,8 +53,6 @@
           </a>
         </div>
 
-
-
         <div class="nav-items">
           <ul>
             <li>
@@ -114,8 +112,9 @@
             distinctio exercitationem!
           </span>
           <!-- <a href="#">CLICK HERE TO LEARN MORE</a> -->
-          <button>Explore</button>
+          <button id="exploreButton">Explore</button>
         </div>
+
         <div class="disc">
           <img src="desc.jpeg" alt="disc" />
         </div>
@@ -136,7 +135,7 @@
                 <li><audio src="audio.mp3" controls></audio></li>
               </ul>
               <div class="more">
-                <a href=""><button>Explore Now</button></a>
+                <a href="poetry.html"><button>Explore Now</button></a>
               </div>
             </div>
           </div>
@@ -152,7 +151,7 @@
                 <li><audio src="audio.mp3" controls></audio></li>
               </ul>
               <div class="more">
-               <a href=""> <button>Explore Now</button></a>
+               <a href="podcast.html"> <button>Explore Now</button></a>
               </div>
             </div>
           </div>
@@ -220,7 +219,15 @@
       </div>
   </footer>
   
-   
+   <script>
+document.getElementById("exploreButton").addEventListener("click", function() {
+  window.scrollBy({
+    top: window.innerHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
  
  <script src="sidebar.js"></script>
  <script src="navToggle.js"></script>
